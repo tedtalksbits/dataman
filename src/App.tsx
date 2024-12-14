@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import alLogo from './assets/al-logo.png';
 import { Button } from '@/components/ui/button';
 import { SystemInfoComponent } from './features/system/components/system-info';
+import { TriggerForm } from './features/triggers/components/trigger-form';
 
 function App() {
   // the types looks crazy, but it's pretty straight forward
@@ -18,7 +19,7 @@ function App() {
 
   return (
     <main className='container p-4 '>
-      <div className='flex flex-col items-center justify-center'>
+      {/* <div className='flex flex-col items-center justify-center'>
         <img
           src={alLogo}
           alt='react logo'
@@ -38,7 +39,8 @@ function App() {
         </p>
 
         <SystemInfoComponent systemInfo={systemInfo} className='mt-4' />
-      </div>
+      </div> */}
+      <TriggerForm />
     </main>
   );
 }
